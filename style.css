@@ -30,15 +30,43 @@ header {
 
 .nav-bar a {
   color: white;
+  background-color: #1a1a1a;
+  border-radius: 5px;
 }
 
-.hero-image {
+.hero {
+  background-image: url("./assets/active-alive-woman.jpg");
+  height: 80vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.hero h2 {
+  margin-bottom: 30px;
+}
+.hero p {
+  margin: 20px;
+}
+
+.hero-message {
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.hero img {
   width: 100%;
   opacity: 0.3;
-}
 
-.hero-image img {
-  width: 100%;
 }
 
 a {
@@ -112,5 +140,12 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: smaller;
   }
 }
