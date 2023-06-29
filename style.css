@@ -24,8 +24,12 @@ header {
   position: absolute;
   top: 0;
   text-align: center;
-  padding: 20px;
-  color: rgb(72, 42, 206);
+  background: linear-gradient(to right, #a8c0ff, #3f2b96);
+  color: #f9f9f9;
+  padding: 20px 10px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  text-align: center;
+  border-radius: 5px;
 }
 
 .nav-bar a {
@@ -61,11 +65,13 @@ header {
   padding: 10px;
   border-radius: 5px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+  max-width: 900px;
 }
 
 a {
   font-weight: 500;
   text-decoration: inherit;
+  color: greenyellow;
 }
 a:hover {
   color: #535bf2;
@@ -73,7 +79,7 @@ a:hover {
 
 body {
   position: relative;
-  padding-top: 100px;
+  padding-top: 150px;
   margin: 0;
   display: flex;
   align-items: center;
@@ -88,18 +94,32 @@ body {
   );
 }
 
+h1,
+h2,
+h3,
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+/* h1 {
+  font-size: 2vw;
+}
+
+h3 {
+  font-size: 1vw;
+} */
 
 nav {
   display: flex;
   justify-content: space-around;
   width: 70vw;
+ 
 }
 
 .nav-bar a {
   padding: 10px;
   margin: 5px;
 }
-
 
 .card {
   padding: 2em;
@@ -137,9 +157,29 @@ button:focus-visible {
   }
 }
 
-
-@media only screen and (max-width: 500px) {
-  h1 {
-    font-size: smaller;
+@media screen and (max-width: 1500px) {
+  body {
+    padding-top: 120px;
   }
 }
+
+@media screen and (max-width: 580px) {
+  h1, h2, h3 {
+    font-size: medium;
+  }
+}
+
+/* Adjustments for smaller screens */
+/* @media screen and (max-width: 768px) {
+  h1 {
+    font-size: 5vw;
+  }
+
+  h2 {
+    font-size: 4vw;
+  }
+
+  h3 {
+    font-size: 3vw;
+  }
+} */

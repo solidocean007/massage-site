@@ -27,3 +27,16 @@
   z-index: -1;
   border-radius: 5px;
 }
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  border-radius: 5px;
+  font-size: larger;
+}
+
+.section-contact a {
+  color: rgb(82, 245, 82);
+  margin: 10px;
+}

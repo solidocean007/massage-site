@@ -1,11 +1,11 @@
 .section-services {
   position: relative;
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   /* justify-content: flex-start; */
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
   width: 70vw;
   padding: 20px;
   border-radius: 5px;
@@ -28,8 +28,20 @@
   border-radius: 5px;
 }
 
-.services-types {
-  display: flex;
-  justify-content: center;
-  padding: 30px;
+.section-services a {
+  color: darkgreen;
+}
+
+.section-services a {
+  color: greenyellow;
+}
+
+li {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+p {
+  font-size: larger;
+  color: aliceblue;
 }
