@@ -1,0 +1,29 @@
+.section-contact {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: center;
+  text-align: center;
+  width: 70vw;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 0;
+  color: black;
+}
+
+.section-contact::after {
+  content: "";
+  background-image: url('./assets/massage-stones-back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  border-radius: 5px;
+}

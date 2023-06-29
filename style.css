@@ -25,7 +25,7 @@ header {
   top: 0;
   text-align: center;
   padding: 20px;
-  color: pink;
+  color: rgb(72, 42, 206);
 }
 
 .nav-bar a {
@@ -61,12 +61,6 @@ header {
   padding: 10px;
   border-radius: 5px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
-}
-
-.hero img {
-  width: 100%;
-  opacity: 0.3;
-
 }
 
 a {
