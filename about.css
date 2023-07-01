@@ -1,16 +1,16 @@
 .section-about {
   position: relative;
-  height: 80vh;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  /* justify-content: flex-start; */
-  align-items: center;
-  text-align: center;
+  justify-content: flex-start;
+  font-size: medium;
+  font-weight: 700;
   width: 70vw;
   padding: 20px;
   border-radius: 5px;
   z-index: 0;
   color: black;
+  margin-bottom: 30px;
 }
 
 .section-about::after {
@@ -30,4 +30,24 @@
 
 .section-about a {
   color: darkgreen;
+  font-size: larger;
+  font-weight: bold;
+  background-color: azure;
+  border-radius: 5px;
+  padding: 0 5px;
 }
+
+.section-about .about-text {
+  margin: 0 100px 0 30px;
+  line-height: 30px;
+}
+
+.head-shot-pic {
+  width: 100%;
+  height: auto;
+}
+
+.head-shot-pic img {
+  border-radius: 10px;
+}
+

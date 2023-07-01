@@ -77,6 +77,11 @@ a:hover {
   color: #535bf2;
 }
 
+html {
+  min-height: 100%;
+  background: radial-gradient(circle, rgba(199, 222, 190, 1) 23%, rgba(167, 16, 226, 1) 87%);
+}
+
 body {
   position: relative;
   padding-top: 150px;
@@ -86,13 +91,9 @@ body {
   flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
-  background: rgb(199, 222, 190);
-  background: radial-gradient(
-    circle,
-    rgba(199, 222, 190, 1) 23%,
-    rgba(167, 16, 226, 1) 87%
-  );
+  background: inherit;
 }
+
 
 h1,
 h2,
@@ -101,13 +102,7 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
-/* h1 {
-  font-size: 2vw;
-}
 
-h3 {
-  font-size: 1vw;
-} */
 
 nav {
   display: flex;
@@ -168,18 +163,3 @@ button:focus-visible {
     font-size: medium;
   }
 }
-
-/* Adjustments for smaller screens */
-/* @media screen and (max-width: 768px) {
-  h1 {
-    font-size: 5vw;
-  }
-
-  h2 {
-    font-size: 4vw;
-  }
-
-  h3 {
-    font-size: 3vw;
-  }
-} */
