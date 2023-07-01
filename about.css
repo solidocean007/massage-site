@@ -2,6 +2,7 @@
   position: relative;
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   font-size: medium;
   font-weight: 700;
@@ -38,16 +39,20 @@
 }
 
 .section-about .about-text {
+  flex: 3 0 200px;
   margin: 0 100px 0 30px;
   line-height: 30px;
 }
 
-.head-shot-pic {
-  width: 100%;
-  height: auto;
-}
-
-.head-shot-pic img {
+.head-shot img {
+  flex: 1 0 200px;
+  width: 130px; 
+  height: 200px; 
   border-radius: 10px;
 }
 
+@media screen and (max-width: 900px) {
+  p {
+    font-size: small;
+  }
+}
