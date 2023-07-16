@@ -7,7 +7,10 @@
       name="description"
       content="Experience healing and rejuvenation with L.A. Massage & Wellness, providing quality on-demand massage therapies at your convenience. Specializing in Swedish, Deep Tissue, Cupping, Sports, Pregnancy, Oncology, and Medical massage."
     />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="style.css" />
     <title>L.A. Massage & Wellness - Your Healing Journey Starts Here</title>
@@ -22,6 +25,7 @@
         <a href="./about.html"><div class="btn">About</div></a>
         <a href="./services.html">Services</a>
         <a href="./contact.html">Contact</a>
+        <a href="./schedule.html">Schedule</a>
       </nav>
     </div>
     <main>
@@ -30,23 +34,54 @@
         <div class="hero-message">
           <h3>Our Massage Therapy Philosophy</h3>
           <p>
-            At L.A. Massage & Wellness, my passion is to provide clients with a healthier, happier way of life by utilizing a range of massage techniques. 
+            At L.A. Massage & Wellness, my passion is to provide clients with a
+            healthier, happier way of life by utilizing a range of massage
+            techniques.
           </p>
           <p>
-            Whether you are seeking relief from chronic pain, looking for a tranquil escape, or preparing for a sporting event, I can tailor a massage therapy to meet your needs.
+            Whether you are seeking relief from chronic pain, looking for a
+            tranquil escape, or preparing for a sporting event, I can tailor a
+            massage therapy to meet your needs.
           </p>
           <p>
-            <a href="./services.html">Discover our specialized services and rates &rarr;</a>
+            <a href="./services.html"
+              >Discover our specialized services and rates &rarr;</a
+            >
           </p>
+          <!-- Calendly link widget begin -->
+          <link
+            href="https://assets.calendly.com/assets/external/widget.css"
+            rel="stylesheet"
+          />
+          <script
+            src="https://assets.calendly.com/assets/external/widget.js"
+            type="text/javascript"
+            async
+          ></script>
+          <a
+            href=""
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/upwork-developer-clintonwilliams'});return false;"
+            >Schedule time with me</a
+          >
+          <!-- Calendly link widget end -->
         </div>
-        
       </section>
     </main>
-    <div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background: lightgrey; padding: 20px; text-align: center; display: none;">
+    <div
+      id="cookie-banner"
+      style="
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: lightgrey;
+        padding: 20px;
+        text-align: center;
+        display: none;
+      "
+    >
       <p>We use cookies to improve your experience on our site.</p>
       <button id="cookie-button">OK</button>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
-
