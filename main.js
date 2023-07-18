@@ -11,3 +11,8 @@ function closeCookieBanner() {
   document.getElementById('cookie-banner').style.display = 'none';
 }
 
+window.addEventListener('DOMContentLoaded', function() {
+  const calendlyLinkContainer = document.getElementById('calendly-link');
+  initializeCalendly(calendlyLinkContainer);
+});
+
