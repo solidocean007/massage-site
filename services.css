@@ -36,6 +36,17 @@
   color: greenyellow;
 }
 
+.special-pricing {
+  color: blue;
+  background-color: white;
+  border-radius: 5px;
+  width: 500px;
+  margin-bottom: 10px;
+  justify-content: center;
+  display: flex;
+  font-weight: bold;
+}
+
 li {
   margin-bottom: 20px;
   font-weight: 500;
