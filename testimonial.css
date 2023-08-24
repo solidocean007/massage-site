@@ -1,0 +1,37 @@
+.testimonials-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.testimonials {
+  display: flex;
+  /* overflow: hidden; */
+  width: 100%;
+  transition: transform 2s ease-in-out;
+}
+
+.testimonial {
+  flex: 0 0 100%;
+  background-color: rgb(167, 132, 132);
+  border-radius: 5px;
+  /* opacity: 0; */
+  visibility: hidden;
+  transition: opacity 1s ease-in-out, visibility 0s linear 2s;
+}
+
+.testimonial.active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease-in-out, visibility 0s linear 0s;
+}
+
+.prev-button,
+.next-button {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+

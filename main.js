@@ -16,3 +16,41 @@ window.addEventListener('DOMContentLoaded', function() {
   initializeCalendly(calendlyLinkContainer);
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  const testimonials = document.querySelectorAll('.testimonial');
+  const testimonialsContainer = document.querySelector('.testimonials');
+  const prevButton = document.querySelector('.prev-button');
+  const nextButton = document.querySelector('.next-button');
+
+  let currentIndex = 0;
+
+  function showTestimonial(index) {
+    testimonials.forEach((testimonial, i) => {
+      testimonial.classList.remove('active');
+      if (i === index) {
+        testimonial.classList.add('active');
+      }
+    });
+  }
+
+  function showNextTestimonial() {
+    currentIndex = (currentIndex + 1) % testimonials.length;
+    testimonialsContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+    showTestimonial(currentIndex);
+  }
+
+  function showPrevTestimonial() {
+    currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+    testimonialsContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+    showTestimonial(currentIndex);
+  }
+
+  prevButton.addEventListener('click', showPrevTestimonial);
+  nextButton.addEventListener('click', showNextTestimonial);
+
+  showTestimonial(currentIndex);
+});
+
+
+
+
