@@ -45,11 +45,10 @@ p {
   transition: opacity 0.5s ease-in-out, visibility 0s linear 0s;
 }
 
-.prev-button,
-.next-button {
-  margin-top: 10px;
-  cursor: pointer;
-}
+
+
+
+
 
 
 
