@@ -47,7 +47,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
   padding: 20px;
   border-radius: 5px;
 }
@@ -80,6 +80,8 @@ a:hover {
 html {
   min-height: 100%;
   background: radial-gradient(circle, rgba(199, 222, 190, 1) 23%, rgba(167, 16, 226, 1) 87%);
+  background-repeat: no-repeat;
+
 }
 
 body {
