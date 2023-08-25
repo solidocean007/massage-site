@@ -1,18 +1,18 @@
-/* p {
+p {
   margin: 0;
   padding: 0;
   width: 300px;
 }
 .hero {
   background-image: none;
-} */
+}
 
 .testimonials-carousel {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .testimonials {
@@ -43,6 +43,7 @@
   opacity: 1;
   visibility: visible;
   transition: opacity 0.5s ease-in-out, visibility 0s linear 0s;
+  background-image: linear-gradient( #5ddcff, #3c67e3 43%, #4e00c2);
 }
 
 
