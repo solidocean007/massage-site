@@ -17,20 +17,23 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="schedule.css" />
+    <link rel="stylesheet" href="navbar.css" />
   </head>
   <body>
     <header>
       <h1>L.A. Massage & Wellness</h1>
       <h3>Healing for life</h3>
     </header>
-    <div class="nav-bar">
-      <nav>
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact</a>
-        <a href="./services.html">Services</a>
-        <a href="./testimonial.html">Testimonials</a>
-      </nav>
+    <div class="topnav" id="myTopnav">
+      <a href="./schedule.html">Schedule</a>
+      <a href="./">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./services.html">Services</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./testimonial.html">Testimonials</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
     <main>
       <section class="section-contact">
@@ -50,6 +53,7 @@
       </section>
     </main>
 
-    <script src="" async defer></script>
+    <script src="calendly.js"></script>
+    <script src="/main.js"></script>
   </body>
 </html>
