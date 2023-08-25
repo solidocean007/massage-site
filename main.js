@@ -1,22 +1,51 @@
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', function() {
+  // Cookie banner code
   if (!document.cookie.includes('cookieBannerShown=true')) {
     document.getElementById('cookie-banner').style.display = 'block';
   }
 
   document.getElementById('cookie-button').addEventListener('click', closeCookieBanner);
-}
 
-function closeCookieBanner() {
-  document.cookie = 'cookieBannerShown=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
-  document.getElementById('cookie-banner').style.display = 'none';
-}
+  function closeCookieBanner() {
+    document.cookie = 'cookieBannerShown=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
 
-window.addEventListener('DOMContentLoaded', function() {
+  // Hamburger menu code
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburgerMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+    
+    // Toggle between absolute and inline positioning
+    if (window.innerWidth < 600) {
+      navLinks.classList.toggle('absolute-position');
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    // Remove the absolute positioning class when the window width is larger than 600px
+    if (window.innerWidth >= 600) {
+      navLinks.classList.remove('show', 'absolute-position');
+    }
+    if (window.innerWidth < 600) {
+      navLinks.classList.remove('absolute-position');
+    }
+  });
+
+  // Initial check on page load
+  if (window.innerWidth < 600) {
+    hamburgerMenu.style.display = 'block';
+  } else {
+    navLinks.style.display = 'flex';
+  }
+
+  // Calendly link code
   const calendlyLinkContainer = document.getElementById('calendly-link');
   initializeCalendly(calendlyLinkContainer);
-});
 
-document.addEventListener('DOMContentLoaded', function () {
+  // Testimonials code
   const testimonials = document.querySelectorAll('.testimonial');
   const testimonialsContainer = document.querySelector('.testimonials');
   const prevButton = document.querySelector('.prev-button');
@@ -50,6 +79,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   showTestimonial(currentIndex);
 });
+
+
+
+
 
 
 
