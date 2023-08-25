@@ -143,6 +143,25 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+@media (max-width: 600px) {
+  .nav-bar nav {
+    display: none; /* Hide navigation links */
+  }
+
+  .nav-links {
+    display: block; /* Display navigation links by default */
+  }
+
+  .nav-links.show {
+    display: flex; /* Show navigation links when the menu is open */
+    flex-direction: column; /* Stack navigation links in a column */
+  }
+
+  .hamburger-menu {
+    display: block; /* Show hamburger menu button */
+  }
+}
+
 
 @media screen and (max-width: 580px) {
   h1, h2, h3 {

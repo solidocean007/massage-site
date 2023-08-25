@@ -1,8 +1,9 @@
 .topnav {
+  align-items: center;
   overflow: hidden;
+  border-radius: 5px;
   background-color: #333;
   margin-bottom: 10px;
-  transition: transform 2s ease-in-out;
 }
 
 .topnav a {
@@ -31,7 +32,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
+  .topnav a:not(.active) {
     display: none;
   }
   .topnav a.icon {
@@ -42,7 +43,7 @@
 
 @media screen and (max-width: 600px) {
   .topnav.responsive {
-    /* position: relative; */
+    position: relative;
     position: fixed;
     top: 10px;
     left: 0;
