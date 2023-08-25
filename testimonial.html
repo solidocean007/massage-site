@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="testimonial.css" />
+    <link rel="stylesheet" href="navbar.css" />
     <script src="https://kit.fontawesome.com/7621dca696.js" crossorigin="anonymous"></script>
     <title>L.A. Massage & Wellness - Your Healing Journey Starts Here</title>
   </head>
@@ -22,15 +23,18 @@
       <h1>L.A. Massage & Wellness</h1>
       <h3>Delivering Healing & Relaxation, One Massage at a Time</h3>
     </header>
-    <div class="nav-bar">
-      <nav>
-        <a href="./">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./services.html">Services</a>
-        <a href="./contact.html">Contact</a>
-        <a href="./schedule.html">Schedule</a>
-      </nav>
+    <div class="topnav" id="myTopnav">
+      <a href="./testimonial.html">Testimonials</a>
+      <a href="./">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./services.html">Services</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./schedule.html">Schedule</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
+
     <main>
       <section class="hero">
         <h2>Testimonials.</h2>
@@ -121,7 +125,7 @@
       <p>We use cookies to improve your experience on our site.</p>
       <button id="cookie-button">OK</button>
     </div>
-    <script type="module" src="/main.js"></script>
     <script src="calendly.js"></script>
+    <script src="/main.js"></script>
   </body>
 </html>
